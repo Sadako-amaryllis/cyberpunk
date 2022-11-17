@@ -551,12 +551,17 @@ Crea enigme
   max-width: 400px;
   height: 550px;
   position: relative;
-  background: url("../images/crea-game/CALQUE\ 3.png"),
-    url("../images/crea-game/CALQUE\ 4.png"),
-    url("../images/crea-game/CALQUE\ 1.png"),
-    url("../images/crea-game/CALQUE\ 2.png");
+  background: url("../images/crea-game/CALQUE\ 1.png"),
+    url("../images/crea-game/CALQUE\ 2.png"),
+    url("../images/crea-game/CALQUE\ 3.png"),
+    url("../images/crea-game/CALQUE\ 4.png");
   background-size: cover;
   background-blend-mode: overlay;
+}
+
+.woman__crea{
+  position: relative;
+  left: 0;
 }
 /* 
 ---------------------------------------------
