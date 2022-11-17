@@ -1,0 +1,38 @@
+<main>
+    <div class="wrapper">
+      <article class="flow">
+        <label class="toggle" for="toggle-element">
+          <span class="toggle__label">Toggle blending</span>
+          <input type="checkbox" role="switch" class="toggle__element" id="toggle-element" checked />
+          <div class="toggle__decor" aria-hidden="true">
+            <div class="toggle__thumb"></div>
+          </div>
+        </label>
+        <div class="calque__enigme__crea"></div>
+      </article>
+    </div>
+  </main>
+
+
+<style>
+.calque__enigme__crea {
+  max-width: 400px;
+  height: 600px;
+  position: relative;
+  background: url("assets/images/crea-game/CALQUE\ 3.png"),
+    url("assets/images/crea-game/CALQUE\ 4.png"),
+    url("assets/images/crea-game/CALQUE\ 1.png"),
+    url("assets/images/crea-game/CALQUE\ 2.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+</style>
+
+<script>
+    const toggle = document.querySelector('#toggle-element');
+const calque = document.querySelector('.calque__enigme__crea');
+
+toggle.addEventListener('change', ({target}) => {
+  calque.style.backgroundBlendMode = target.checked ? 'overlay' : 'normal';
+});
+</script>

@@ -1,0 +1,120 @@
+<html>
+<head>
+<html lang="en">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=iso-8859-1">
+  <title>Epreuves Coding</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+</Head>
+<body>
+  <div id="main__dev__enigme" class="main__dev__enigme">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h2>Compléter en choisissant le bon mot dans la liste ! </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div id="form__dev__enigme" class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+            <FORM NAME="form1">
+            <BLOCKQUOTE><OL>
+            <LI>
+              un navigateur web est 
+            <SELECT NAME="liste1" SIZE=1>
+            <option VALUE=1>Un réseau social global</OPTION>
+            <option VALUE=0>Un logiciel capable d'interpréter et d'afficher du code HTML</OPTION>
+            <option VALUE=1>Un outil permettant d'accéder à Internet</OPTION>
+            <option VALUE=1>La toute première application mondiale</OPTION>
+            </SELECT>
+            <BR><BR>
+            </LI>
+            <LI>
+            L'attribut 
+            <SELECT NAME="liste2" SIZE=1>
+            <option VALUE=1>link</OPTION>
+            <option VALUE=1>a</OPTION>
+            <option VALUE=0>href</OPTION>
+            <option VALUE=1>h1</OPTION>
+            </SELECT>
+            permet d'indiquer la destination d'un lien.
+            </LI>
+            <LI>
+              Le code CSS doit être placé
+            <SELECT NAME="liste3" SIZE=1>
+            <option VALUE=0>Dans un fichier externe utilisable pour plusieurs pages</OPTION>
+            <option VALUE=1>Dans le body</OPTION>
+            <option VALUE=1>Entre les balises head</OPTION>
+            <option VALUE=1>Dans un fichier JavaScript</OPTION>
+            </SELECT>
+            <BR><BR>
+            </LI>
+            </OL></BLOCKQUOTE>
+            <BR>
+            <DIV ALIGN=right>
+            <INPUT TYPE=button VALUE="Vérifier" ONCLICK="verif1()"></INPUT> 
+            </DIV>
+            </FORM>
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="section-heading">
+              <img src="assets/images/homme-age-creepy.png" alt="story" style="width: 240px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center  wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+          <div class="left-image">
+            <img src="assets/images/image 2.png" alt="iim" style="width: 100px;">
+            <img src="assets/images/LOGO WAIIM_Plan de travail 1-03.png" alt="logo" style="width: 200px;">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="section-heading">
+          <p>©Team: <a rel="nofollow">Mylène M'zali, Idriss Dembele, Maximilien Kotowicz, Hugo Monmousseau, Guillaume Sursin, Victor Seingier, Matthieu Wyatt, Jérémie Dautry & Mohamed Ali Ait ouaret</a>
+          <br>Elèves d'IIM</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Scripts -->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/objectif.js"></script>
+<script langage="JavaScript">
+  function erreurl(numliste) {
+    laliste=eval("form1.liste"+numliste);
+    return laliste[laliste.selectedIndex].value; 
+  }
+  
+  function message(erreurs) {
+    if (erreurs==0) alert('Félicitations ! Tu as réussi cette épreuve le code : . . 2 .');
+    else if (erreurs==1) alert('Tu as fait une erreur !');
+    else alert('Tu as fait '+erreurs+' erreurs !');
+  }
+  
+  function verif1() {
+    erreurs=0;
+    for (i=1; i<=2; i++) {
+    erreurs+=eval(erreurl(i));
+    }
+    message(erreurs);
+  }
+  </script>
+</body>
+</html>
