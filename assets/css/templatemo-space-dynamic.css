@@ -539,6 +539,7 @@ Crea enigme
 */
 #main__crea__enigme {
   width: 100%;
+  padding: 60px 0px 60px 0px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -562,6 +563,20 @@ Crea enigme
 .woman__crea{
   position: relative;
   left: 0;
+}
+.check__calque {
+  display: flex;
+  padding-top: 120px;
+  margin-top: 0px;
+  background: #10BDFF;
+}
+.check__calque__right {
+  font-family: "articulatcf";
+  flex-direction: column;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 500px;
 }
 /* 
 ---------------------------------------------

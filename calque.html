@@ -1,4 +1,4 @@
-<main>
+<!-- <main>
     <div class="wrapper">
       <article class="flow">
         <label class="toggle" for="toggle-element">
@@ -35,4 +35,154 @@ const calque = document.querySelector('.calque__enigme__crea');
 toggle.addEventListener('change', ({target}) => {
   calque.style.backgroundBlendMode = target.checked ? 'overlay' : 'normal';
 });
+</script> -->
+
+<!-- <html>
+<head>
+<script language="javascript">
+function filtre1() {
+document.getElementById('image').src='assets/images/crea-game/CALQUE 1.png';
+}
+function filtre2() {
+document.getElementById('image').src='assets/images/crea-game/CALQUE 2.png';
+}
 </script>
+</head>
+<body>
+<table align="center" cellpadding="0">
+<td width="100">
+<div>Cliquer <a href="javascript:filtre1()">ICI</a> pour afficher l'image.</div>
+</td>
+<td width="100" style="border:black solid 1px">
+<img src="blanc.jpg" id="image">
+</td>
+<td width="100">
+<div>Cliquer <a href="javascript:filtre2()">ICI</a> pour effacer l'image.</div>
+</td>
+</table>
+</body>
+</html> -->
+
+<html>
+<head>
+<html lang="en">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=iso-8859-1">
+  <title>Epreuves Coding</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+</Head>
+<body>
+  <div id="main__dev__enigme" class="main__dev__enigme">
+    <div class="container">
+      <div class="row">
+        <div class="main-red-button"><a href="hub.html">Retourner aux épreuves</a></div>
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              <h2>Compléter en choisissant la <em>bonne réponse</em>  dans la liste ! </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div id="form__dev__enigme" class="col-lg-12 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+            <FORM NAME="form1">
+            <BLOCKQUOTE><OL>
+            <LI>
+              <img src="assets/images/crea-game/CALQUE 2.png" alt="2" style="height: 300px; width:200px">
+              
+            <SELECT NAME="liste1" SIZE=1>
+              <option VALUE=1>position 1 </OPTION>
+                <option VALUE=0>position 2</OPTION>
+                <option VALUE=1>position 3</OPTION>
+                <option VALUE=1>position 4</OPTION>
+            </SELECT>
+            </LI>
+            <LI>
+            <img src="assets/images/crea-game/CALQUE 1.png" alt="1" style="height: 300px; width:200px">
+            <SELECT NAME="liste2" SIZE=1>
+              <option VALUE=0>position 1 </OPTION>
+                <option VALUE=1>position 2</OPTION>
+                <option VALUE=1>position 3</OPTION>
+                <option VALUE=1>position 4</OPTION>
+            </SELECT>
+            </LI>
+            <LI>
+              <img src="assets/images/crea-game/CALQUE 3.png" alt="3" style="height: 300px; width:200px">
+            <SELECT NAME="liste3" SIZE=1>
+            <option VALUE=1>position 1 </OPTION>
+            <option VALUE=1>position 2</OPTION>
+            <option VALUE=0>position 3</OPTION>
+            <option VALUE=1>position 4</OPTION>
+            </SELECT>
+            </LI>
+            <LI>
+              <img src="assets/images/crea-game/CALQUE 4.png" alt="4" style="height: 300px; width:200px">
+            <SELECT NAME="liste3" SIZE=1>
+            <option VALUE=1>position 1 </OPTION>
+            <option VALUE=1>position 2</OPTION>
+            <option VALUE=1>position 3</OPTION>
+            <option VALUE=0>position 4</OPTION>
+            </SELECT>
+            </LI>
+            </OL></BLOCKQUOTE>
+            <BR>
+            <DIV ALIGN=right>
+            <INPUT TYPE=button VALUE="Vérifier" ONCLICK="ordre()"></INPUT> 
+            </DIV>
+            </FORM>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center  wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+          <div class="left-image">
+            <img src="assets/images/image 2.png" alt="iim" style="width: 100px;">
+            <img src="assets/images/LOGO WAIIM_Plan de travail 1-03.png" alt="logo" style="width: 200px;">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="section-heading">
+          <p>©Team: <a rel="nofollow">Mylène M'zali, Idriss Dembele, Maximilien Kotowicz, Hugo Monmousseau, Guillaume Sursin, Victor Seingier, Matthieu Wyatt, Jérémie Dautry & Mohamed Ali Ait ouaret</a>
+          <br>Elèves d'IIM</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Scripts -->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/objectif.js"></script>
+<script langage="JavaScript">
+  function erreurl(numliste) {
+    laliste=eval("form1.liste"+numliste);
+    return laliste[laliste.selectedIndex].value; 
+  }
+  
+  function message(erreurs) {
+    if (erreurs==0) alert('Félicitations ! Tu as réussi cette épreuve le code : 2 * * *');
+    else if (erreurs==1) alert('Tu as fait une erreur !');
+    else alert('Tu as fait '+erreurs+' erreurs !');
+  }
+  
+  function ordre() {
+    erreurs=0;
+    for (i=1; i<=2; i++) {
+    erreurs+=eval(erreurl(i));
+    }
+    message(erreurs);
+  }
+  </script>
+</body>
+</html>
