@@ -408,6 +408,7 @@ Popup video
   position: fixed;
   right: 0;
   bottom: 0;
+  background: none;
   z-index: 300;
 }
 /* 
@@ -559,24 +560,32 @@ Crea enigme
 }
 /* 
 ---------------------------------------------
+Page win 2023
+--------------------------------------------- 
+*/
+#main__win__enigme {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../images/Fiin_cube.mp4");
+}
+/* 
+---------------------------------------------
 Footer Style
 --------------------------------------------- 
 */
 footer {
   background-color: #252525;
   color: #fefefe;
-  z-index: 300;
-
 }
 footer p {
   text-align: center;
   margin: 50px 0px 45px 0px;
   color: #f9f9f9;
-
-}
-
-#footer__background {
-  color: #5cb85c;
+  z-index: -100;
 }
 /* 
 ---------------------------------------------
